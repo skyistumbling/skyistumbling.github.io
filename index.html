@@ -1,28 +1,56 @@
 <!DOCTYPE html>
 <html>
-	<style type="text/css">
+<head>
+    <link rel="stylesheet" href="css/scratch2jolt.css">
+</head>
+<body>
+<div class="app">
+<p>Project Name</p>
+<input style="display: block;" type="text" id="input1" value="">
+<p>Project Author</p>
+<input style="display: block;" type="text" id="input2" value="">
+<p>Project ID</p>
+<input style="display: block;" type="text" id="input3" value="">
 
-html {
-	background-color: #262626;
-	margin: 0;
-	background-image: url("background.png");
-	height: 100%; 
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+
+<button onclick="myFunction()">Create GameJolt Package</button>
+<p class="credit">Created by @Aspirus for D7 Studios</p>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+<script>
+
+
+
+
+function loadFile(filePath) {
+    var result = null;
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.open("GET", filePath, true);
+    xmlhttp.send();
+    xmlhttp.onload = function() {
+        result = xmlhttp.responseText;
+        console.log(result);
+        window.template = result;
+        
+    }
+    
 }
 
-.footer {
-	color: white;
-	text-align: center;
+var template = null
+loadFile("https://aspirusfromscratch.github.io/template.html");
+
+function myFunction() {
+	template = template.replace("<<1", document.getElementById("input1").value);
+    template = template.replace("<<2", document.getElementById("input2").value);
+    template = template.replace("<<3", document.getElementById("input3").value);
+
+	var htmlfile = new Blob([template],
+                { type: "text/plain;charset=utf-8" });
+	saveAs(htmlfile, "index.html");
 }
 
-	</style>
-	<head>
-		<title><<1</title>
-	</head>
-	<body>
-		<p align="center"><iframe src="https://experiments.turbowarp.org/interpolated-60/embed.html?hqpen&autoplay&username=Player#<<3" width="960" height="750" allowtransparency="true" frameborder="0" scrolling="no"allowfullscreen></iframe></p>
-		<p class="footer">This game was made by <<2. This webpage was generated using @Aspirus 's Scratch To GameJolt Generator.</p>
-	</body>
+
+</script>
+</div>
+</body>
 </html>
