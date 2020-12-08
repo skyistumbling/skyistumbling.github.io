@@ -57,6 +57,7 @@ function myFunction() {
 	var htmlfile = new Blob([template],
                 { type: "text/plain;charset=utf-8" });
 	saveAs(htmlfile, "index.html");
+    window.location.reload();
 }
 
 
