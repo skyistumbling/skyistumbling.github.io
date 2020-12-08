@@ -9,14 +9,14 @@ html {
 }
 
 .app {
-	padding-top: 20px;
+	padding-top: 500px;
 	padding-bottom: 5px;
 	border-radius: 10px;
 	margin: auto;
 	margin-top: 50px;
 	width: 30%;
-	background-color: #5C464E;
-	box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+	background-color: #12C9E1;
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
 }
 
 .app p{
@@ -31,7 +31,8 @@ html {
 }
 
 .app button{
-	background-color: #5C464E;
+	background-color: #0B807C;
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
 	border: none;
 	color: white;
 	padding: 15px 15px;
