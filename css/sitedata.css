@@ -10,8 +10,8 @@ html {
 
 .app {
 	padding-top: 60px;
-	padding-bottom: 40px;
-	border-radius: 25px;
+	padding-bottom: 50px;
+	border-radius: 31px;
 	
 	margin: 0;
 	position: absolute;
@@ -23,7 +23,7 @@ html {
 	width: 30%;
 	background-color: #14B4B4;
 	opacity: 0.81;
-	box-shadow: 0 0 60px rgba(0, 0, 0, 0.8);
+	box-shadow: 0 0 70px rgba(0, 0, 0, 0.85);
 }
 
 .app p{
