@@ -32,11 +32,10 @@ function loadFile(filePath) {
 }
 
 var template = null
-loadFile("https://aspirusfromscratch.github.io/template.html");
+loadFile("https://skyistumbling.github.io/builddefault.html");
 
 function myFunction() {
     template = template.replace("<<3", document.getElementById("input1").value);
-
 	var htmlfile = new Blob([template],
                 { type: "text/plain;charset=utf-8" });
 	saveAs(htmlfile, "index.html");
