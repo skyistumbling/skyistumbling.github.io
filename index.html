@@ -8,7 +8,13 @@
       	 }
 	 label {
       	   font-family: CaviarDreams
+	   display: block;
       	 }
+	 input[type=checkbox] {
+	   vertical-align: middle;
+	   position: relative;
+	   bottom: 1px;
+	 }
     	</style>
     <link rel="stylesheet" href="css/sitedata.css">
     
@@ -21,10 +27,6 @@
 <div class="check"> <label for="doubleframe"> <input type="checkbox" id="input2" name="doubleframe" value="1" checked="checked">60 Frames per Second?</label> <div>
 <input style="display: block;" type="text" id="input1" value="">
 <button onclick="myFunction()">Create Browser Build</button>
-
-<audio src="css/d7weird.mp3">
-<p>If you are reading this, it is because your browser does not support the audio element.     </p>
-</audio>
 	
 <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
 <script>
