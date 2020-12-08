@@ -9,14 +9,14 @@ html {
 }
 
 .app {
-	padding-top: 500px;
+	padding-top: 300px;
 	padding-bottom: 5px;
 	border-radius: 10px;
 	margin: auto;
 	margin-top: 50px;
 	width: 30%;
-	background-color: #12C9E1;
-	box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+	background-color: #14B4B4;
+	box-shadow: 0 0 50px rgba(0, 0, 0, 0.7);
 }
 
 .app p{
