@@ -44,8 +44,9 @@ var template = null
 loadFile("https://skyistumbling.github.io/builddefault.html");
 
 function myFunction() {
-    var emb = document.getElementById("input2");
-	if (emb.checked == true){
+    var temp = document.getElementById("input2");
+    var emb = null;
+	if (temp.checked == true){
 	  emb = "experiments.turbowarp.org/interpolated-60/";
         } else {
 	  emb = "turbowarp.org/";
