@@ -16,9 +16,7 @@ html {
 	margin-top: 50px;
 	width: 30%;
 	background-color: #5C464E;
-	box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-	
-
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
 }
 
 .app p{
@@ -45,9 +43,4 @@ html {
 	margin: auto;
 	margin-top: 30px;
 	border-radius: 5px;
-
-}
-
-.credit {
-	color: #adadad;
 }
