@@ -12,8 +12,14 @@ html {
 	padding-top: 60px;
 	padding-bottom: 40px;
 	border-radius: 15px;
-	margin: auto;
-	margin-top: 50px;
+	
+	margin: 0;
+	position: absolute;
+  	top: 50%;
+ 	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	
 	width: 30%;
 	background-color: #14B4B4;
 	opacity: 0.84;
@@ -28,7 +34,7 @@ html {
 }
 
 .app input{
-	width: 50%;
+	width: 60%;
 	margin: auto;
 	opacity: 1;
 }
