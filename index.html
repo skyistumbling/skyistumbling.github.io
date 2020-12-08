@@ -55,7 +55,7 @@ function myFunction() {
 	}
 	
     template = template.replace("<<3", document.getElementById("input1").value);
-    template = template.replace("<<2", "emb");
+    template = template.replace("<<2", emb);
 	var htmlfile = new Blob([template],
                 { type: "text/plain;charset=utf-8" });
 	saveAs(htmlfile, "index.html");
