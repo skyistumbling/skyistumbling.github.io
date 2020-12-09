@@ -29,6 +29,7 @@
 <p style="text-align:center;font-size:100%">-  -  -</p>
 
 <div class="check"> <input type="checkbox" id="input2" name="doubleframe" value="1" checked> <label for="input2">60 Frames per Second?</label> <div>
+<div class="check"> <input type="checkbox" id="input4" name="doubleframe" value="1" checked> <label for="input4">Infinite Clones?</label> <div>
 <p style="text-align:center;font-size:150%">Type in a Project ID below</p>
 <input style="display: block;" type="text" id="input1" value="">
 <button onclick="myFunction()">Create Browser Build</button>
@@ -56,16 +57,24 @@ loadFile("https://skyistumbling.github.io/builddefault.html");
 
 function myFunction() {
     var temp = document.getElementById("input2");
+    var tempClone = document.getElementById("input4");
     var emb = null;
 	if (temp.checked == true){
 	  emb = "experiments.turbowarp.org/interpolated-60/";
         } else {
 	  emb = "turbowarp.org/";
 	}
+    var embClone = null;
+	if (tempClone.checked == true){
+	  embClone = "&clones=Infinity";
+        } else {
+	  embClone = "";
+	}
 	
     template = template.replace("<<3", document.getElementById("input1").value);
     template = template.replace("<<2", emb);
     template = template.replace("<<1", document.getElementById("input3").value);
+    template = template.replace("<<4", embClone;
 	var htmlfile = new Blob([template],
                 { type: "text/plain;charset=utf-8" });
 	saveAs(htmlfile, "index.html");
