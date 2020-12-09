@@ -14,7 +14,7 @@ html {
     border-radius: 40px;
 	
     width: 40%;
-    position: initial;
+    position: relative;
     margin: auto;
 	
     background-color: #14B4B4;
@@ -57,7 +57,7 @@ html {
 }
 
 @keyframes floating1 { 
-    0%   {transform: translate(0px,  0px);} 
-    50%  {transform: translate(0px, -4px);} 
-    100% {transform: translate(0px, 0px); }
+    0%   {bottom:0px);} 
+    50%  {bottom:-4px;} 
+    100% {bottom:0px; }
 } 
