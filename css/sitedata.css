@@ -67,7 +67,9 @@ html {
     animation-duration: 4.45s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
-    float:left;
+    display: flex;
+    flex-row: row nowrap;
+    align-items: center;
 }
 
 @keyframes floating1 { 
