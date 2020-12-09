@@ -80,8 +80,10 @@ function myFunction() {
                 { type: "text/plain;charset=utf-8" });
 	var zip = new JSZip();
 	zip.file("index.html", htmlfile);
-	var content = zip.generate();
-	location.href="data:application/zip;base64,"+content;
+	zip.generateAsync({type: blob})
+	.then(function(content){
+	saveAs(content, "browserbuild.zip");
+	}
 	
 	saveAs(htmlfile, "index.html");
     window.location.reload();
