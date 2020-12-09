@@ -56,6 +56,13 @@ html {
 	margin-top: 30px;
 }
 
+animated1{
+    animation-name: floating1;
+    animation-duration: 4.3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
 @keyframes floating1 { 
     0%   {transform:translateY(0px);} 
     50%  {transform:translateY(7px);} 
