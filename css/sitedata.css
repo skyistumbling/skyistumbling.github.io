@@ -24,6 +24,11 @@ html {
 	background-color: #14B4B4;
 	opacity: 0.81;
 	box-shadow: 0 0 70px rgba(0, 0, 0, 0.85);
+	
+	animation-name: floating; 
+    	animation-duration: 3s; 
+    	animation-iteration-count: infinite; 
+    	animation-timing-function: ease-in-out; 
 }
 
 .app p{
@@ -54,3 +59,9 @@ html {
 	margin: auto;
 	margin-top: 30px;
 }
+
+@keyframes floating { 
+    0% { transform: translate(-50,  -50px); } 
+    50%  { transform: translate(-50, -65px); } 
+    100%   { transform: translate(-50, -50px); }     
+} 
