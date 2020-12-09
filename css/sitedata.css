@@ -61,6 +61,12 @@ html {
     animation-duration: 4.3s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
+}
+.anim2{
+    animation-name: floating2;
+    animation-duration: 4.45s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
     float:left;
 }
 
