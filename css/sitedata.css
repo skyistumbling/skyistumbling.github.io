@@ -57,7 +57,7 @@ html {
 }
 
 @keyframes floating1 { 
-    0%   {transform:translateY(100px);} 
-    50%  {transform:translateY(104px);} 
-    100% {transform:translateY(100px); }
+    0%   {transform:translateY(60px);} 
+    50%  {transform:translateY(64px);} 
+    100% {transform:translateY(60px); }
 } 
