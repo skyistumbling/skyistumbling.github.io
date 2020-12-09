@@ -56,7 +56,7 @@ html {
 	margin-top: 30px;
 }
 
-animated1{
+.anim1{
     animation-name: floating1;
     animation-duration: 4.3s;
     animation-iteration-count: infinite;
