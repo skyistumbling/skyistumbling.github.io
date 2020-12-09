@@ -59,7 +59,7 @@ html {
 }
 
 @keyframes floating { 
-    0% { transform: translate(-50px,  -50px); } 
-    50%  { transform: translate(-50px, -60px); } 
-    100%   { transform: translate(-50px, -50px); }     
+    0% { transform: translate(0px,  0px); } 
+    50%  { transform: translate(0px, -6px); } 
+    100%   { transform: translate(0px, -0px); }
 } 
