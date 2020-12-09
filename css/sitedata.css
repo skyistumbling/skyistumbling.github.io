@@ -9,23 +9,22 @@ html {
 }
 
 .app {
-	padding-top: 60px;
-	padding-bottom: 50px;
-	border-radius: 40px;
+    padding-top: 60px;
+    padding-bottom: 50px;
+    border-radius: 40px;
 	
-	width: 40%;
-	position:absolute; top:50%; 
-	margin-bottom: auto;
-	margin-left: auto;
- 	margin-right: auto;
-	background-color: #14B4B4;
-	opacity: 0.81;
-	box-shadow: 0 0 70px rgba(0, 0, 0, 0.85);
+    width: 40%;
+    position: initial;
+    margin: auto;
 	
-	animation-name: floating1; 
-    	animation-duration: 4s; 
-    	animation-iteration-count: infinite; 
-    	animation-timing-function: ease-in-out; 
+    background-color: #14B4B4;
+    opacity: 0.81;
+    box-shadow: 0 0 70px rgba(0, 0, 0, 0.85);
+
+    animation-name: floating1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
 
 .app p{
