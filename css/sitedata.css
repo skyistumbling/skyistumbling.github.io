@@ -11,7 +11,7 @@ html {
 .app {
     padding-top: 30px;
     padding-bottom: 10px;
-    border-radius: 40px;
+    border-radius: 50px;
 	
     width: 40%;
     position: relative;
@@ -58,6 +58,6 @@ html {
 
 @keyframes floating1 { 
     0%   {transform:translateY(60px);} 
-    50%  {transform:translateY(64px);} 
+    50%  {transform:translateY(67px);} 
     100% {transform:translateY(60px); }
 } 
