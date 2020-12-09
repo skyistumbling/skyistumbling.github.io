@@ -61,6 +61,7 @@ html {
     animation-duration: 4.3s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
+    float:left;
 }
 
 @keyframes floating1 { 
