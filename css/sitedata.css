@@ -63,12 +63,11 @@ html {
     animation-timing-function: ease-in-out;
 }
 .anim2{
-    animation-name: floating2;
-    animation-duration: 4.45s;
+    animation-name: floating3;
+    animation-duration: 1s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
     display: flex;
-    flex-row: row nowrap;
     align-items: center;
 }
 
@@ -80,5 +79,10 @@ html {
 @keyframes floating2 { 
     0%   {transform:translateY(0px);} 
     50%  {transform:translateY(4px);} 
+    100% {transform:translateY(0px); }
+} 
+@keyframes floating3 { 
+    0%   {transform:translateY(0px);} 
+    50%  {transform:translateY(8px);} 
     100% {transform:translateY(0px); }
 } 
