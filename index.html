@@ -36,10 +36,9 @@
 	
 <div class="check"> <input type="checkbox" id="input2" name="doubleframe" value="1" checked> <label for="input2">60 Frames per Second?</label> </div>
 <div class="check"> <input type="checkbox" id="input4" name="doubleframe" value="1" checked> <label for="input4">Infinite Clones?</label> </div>
+<div class="check"> <input type="checkbox" id="reswide" name="widescreen" value="0"> <label for="reswide">Widescreen?</label> </div>
 <p style="text-align:center;font-size:250%"> </p>
 	
-<input type="image" id="image" alt="bruh"
-       src="d1 (1).png">
 	
 	
 	
@@ -79,6 +78,7 @@ loadFile("https://skyistumbling.github.io/builddefault.html");
 function myFunction() {
     var temp = document.getElementById("input2");
     var tempClone = document.getElementById("input4");
+    var tempWide = document.getElementbyID("reswide");
     var emb = null;
 	if (temp.checked == true){
 	  emb = "experiments.turbowarp.org/interpolated-60/";
@@ -91,11 +91,21 @@ function myFunction() {
         } else {
 	  embClone = "";
 	}
+    var embWide = null;
+	if (tempWide.checked == true){
+	  embWide = "&size=640x360";
+	} else {
+	  embWide = "";
+	}
+    
 	
     template = template.replace("<<3", document.getElementById("input1").value);
     template = template.replace("<<2", emb);
     template = template.replace("<<1", document.getElementById("input3").value);
     template = template.replace("<<4", embClone);
+    template = template.replace("<<5", embWide);
+	
+	
 	var htmlfile = new Blob([template],
                 { type: "text/plain;charset=utf-8" });
 	var zip = new JSZip();
