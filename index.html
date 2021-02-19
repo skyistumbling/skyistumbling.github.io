@@ -14,7 +14,6 @@
       	 }
 	 ::placeholder {
 	   color: white;
-	   input:focus::-webkit-input-placeholder { color:transparent; }
 	 }
     	</style>
     <link rel="stylesheet" href="css/sitedata.css">
@@ -42,8 +41,8 @@
 	
 	
 <p style="text-align:center;font-size:100%">-  -  -</p>
-<input style="display: block; width: 264px; height: 30px; text-align:center; font-family: CaviarDreams; background-color: #0051514d;border-color: #00aeb0;" type="text" 
-       oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" id="input1" placeholder="Type a Project ID in here" value="">
+<input style="display: block; width: 275px; height: 30px; text-align:center; font-family: CaviarDreams; background-color: #0051514d;border-color: #00aeb0; color: white; input:focus::-webkit-input-placeholder { color:transparent; }" type="text" 
+ oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" id="input1" placeholder="Type a Project ID in here" value="">
 	
 <button onclick="myFunction()">Create Browser Build</button>
 </div>
