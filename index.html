@@ -18,106 +18,15 @@
     	</style>
     <link rel="stylesheet" href="css/sitedata.css">
     
-    <title>Scratch To Build</title>
+    <title>skyistumbling</title>
 </head>
 <body>
-<p style="text-align:center;font-size:350%"> </p>
-<div class="anim1"> <img src="stblogo.png" style="display: block;width: 15%;margin-left: auto;margin-right: auto;"> </div>
-<p style="text-align:center;font-size:200%"> </p>
-	
-<div class="app">
-
-<p style="text-align:center;font-size:78%">Custom Background, to not have one leave empty.</p>
-<p style="text-align:center;font-size:61%">*GIF's are supported for backgrounds!</p>
-	
-<input style="display: block; width: 320px; height: 27px; text-align:center; font-family: CaviarDreams; font-size:69%; background-color: #0051514d;border-color: #00aeb0; color: white;" type="text" id="input3"placeholder="Type a Image URL here to use as a custom background" value="">
-<p style="text-align:center;font-size:100%">-  -  -</p>
-
-	
-<div class="check"> <input type="checkbox" id="input2" name="doubleframe" value="1" checked> <label for="input2">60 Frames per Second?</label> </div>
-<div class="check"> <input type="checkbox" id="input4" name="doubleframe" value="1" checked> <label for="input4">Infinite Clones?</label> </div>
-<div class="check"> <input type="checkbox" id="reswide" name="widescreen" value="0"> <label for="reswide">Widescreen?</label> </div>
-<p style="text-align:center;font-size:250%"> </p>
-	
-	
-	
-	
-<p style="text-align:center;font-size:100%">-  -  -</p>
-<input style="display: block; width: 275px; height: 30px; text-align:center; font-family: CaviarDreams; background-color: #0051514d;border-color: #00aeb0; color: white;" type="text" 
- oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');" id="input1" placeholder="Type a Project ID in here" value="">
-	
-<button onclick="myFunction()">Create Browser Build</button>
-</div>
-
-	
-	
+<p style="text-align:center;font-size:150%"> </p>
+<div class="anim1"> <img src="sky2.png" style="display: block;width: 60%;margin-left: auto;margin-right: auto;"> </div>
+<p style="text-align:center;font-size:100%"> </p>
+		
 <p style="text-align:center;font-size:160%"> </p>
 <div class="anim2"> <a href="https://gamejolt.com/@skyistumbling"><img src="skygjre.png" style="display: block;width: 27%;margin-left: auto;"></a><a href="https://gamejolt.com/c/d7studios-arrabp"><img src="ford7.png" style="display: block;width: 27%;margin-right: auto;"></a></div>
 
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
-<script src="css/jszip.js"></script>
-<script>
-
-
-function loadFile(filePath) {
-    var result = null;
-    var xmlhttp = new XMLHttpRequest();
-    xmlhttp.open("GET", filePath, true);
-    xmlhttp.send();
-    xmlhttp.onload = function() {
-        result = xmlhttp.responseText;
-        console.log(result);
-        window.template = result;
-    }
-}
-
-var template = null
-loadFile("https://skyistumbling.github.io/builddefault.html");
-
-function myFunction() {
-    var temp = document.getElementById("input2");
-    var tempClone = document.getElementById("input4");
-    var tempWide = document.getElementById("reswide");
-    var emb = null;
-	if (temp.checked == true){
-	  emb = "experiments.turbowarp.org/interpolated-60/";
-        } else {
-	  emb = "turbowarp.org/";
-	}
-    var embClone = null;
-	if (tempClone.checked == true){
-	  embClone = "&clones=Infinity";
-        } else {
-	  embClone = "";
-	}
-    var embWide = null;
-	if (tempWide.checked == true){
-	  embWide = "&size=640x360";
-	} else {
-	  embWide = "";
-	}
-    
-	
-    template = template.replace("<<3", document.getElementById("input1").value);
-    template = template.replace("<<2", emb);
-    template = template.replace("<<1", document.getElementById("input3").value);
-    template = template.replace("<<4", embClone);
-    template = template.replace("<<5", embWide);
-	
-	
-	var htmlfile = new Blob([template],
-                { type: "text/plain;charset=utf-8" });
-	var zip = new JSZip();
-	zip.file("index.html", htmlfile);
-	zip.generateAsync({type: "blob"})
-	.then(function(content){
-	saveAs(content, "browserbuild.zip");
-	});
-    window.location.reload();
-}
-
-
-</script>
 </body>
 </html>
